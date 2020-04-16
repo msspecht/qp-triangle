@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="AppTest" time="0.006" errors="0" skipped="0">
+<testsuite tests="8" failures="0" name="AppTest" time="0.013" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.1+13-LTS"/>
@@ -65,8 +65,12 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="AppTest" name="testEquilatero" time="0.006"/>
+  <testcase classname="AppTest" name="testEquilatero" time="0.007"/>
   <testcase classname="AppTest" name="testEscaleno" time="0"/>
-  <testcase classname="AppTest" name="testInvalido" time="0"/>
+  <testcase classname="AppTest" name="testInvalidoNegativo" time="0.002"/>
+  <testcase classname="AppTest" name="testIsoscelesVariante3_1" time="0.001"/>
+  <testcase classname="AppTest" name="testIsoscelesVariante3_2" time="0.001"/>
+  <testcase classname="AppTest" name="testNaoTriangulo" time="0.001"/>
   <testcase classname="AppTest" name="testIsosceles" time="0"/>
+  <testcase classname="AppTest" name="testInvalidoZero" time="0.001"/>
 </testsuite>
