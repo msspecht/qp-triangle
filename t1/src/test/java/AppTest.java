@@ -58,4 +58,52 @@ public class AppTest
         String expect = "Não é triângulo";
     }
 
+    @Test(expected = IllegalArgumentException.class)
+    public void testVariantes7_1()
+    {
+        int actual = App.identificaTriangulo(1, 3, 2);
+        String expect = "Não é triângulo";
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testVariantes7_2()
+    {
+        int actual = App.identificaTriangulo(3, 1, 2);
+        String expect = "Não é triângulo";
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testLinhaLonga()
+    {
+        int actual = App.identificaTriangulo(1, 2, 8);
+        String expect = "Não é triângulo";
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testVariantes9()
+    {
+        int actual = App.identificaTriangulo(8, 1, 2);
+        String expect = "Não é triângulo";
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testTodosZero()
+    {
+        int actual = App.identificaTriangulo(0, 0, 0);
+        String expect = "Não é triângulo";
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testNumerosReais()
+    {
+        int actual = App.identificaTriangulo(1/2, 3/4, 5);
+        String expect = "Entrada inválida";
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testNoParamInvalido()
+    {
+        int actual = App.identificaTriangulo(7, 8);
+        String expect = "Entrada inválida";
+    }
 }

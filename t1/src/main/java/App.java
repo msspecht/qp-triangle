@@ -27,6 +27,10 @@ public class App {
         throw new IllegalArgumentException("Não é triângulo");
     }
 
+    public static int identificaTriangulo(int a, int b) {
+        throw new IllegalArgumentException("Entrada Inválida");
+    }
+
     /**
      *
      * @param args
